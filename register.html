@@ -24,7 +24,7 @@
     </ul>
   </nav>
   <div>
-    <h3>Register Now!</h3>
+    <h3 class="register-heading">Register Now!</h3>
     <div class="register-section">
       <div class="register-form">
         <form>
@@ -43,7 +43,7 @@
           </div>
           
           <div class="input-div">
-            <label>Department:</label><br>
+            <label>Department:</label>
             <select id="department" required>
               <option value="">Select Department</option>
               <option value="HR">HR</option>
@@ -59,25 +59,32 @@
           </div>
       
           <div class="input-div">
-            <label>Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="Male" required>
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="Other">
-            <label for="other">Other</label><br><br>
+            <label>Gender:</label>
+            <div>
+              <input type="radio" id="male" name="gender" value="Male" required>
+              <label>Male</label>
+              <input type="radio" id="female" name="gender" value="Female">
+              <label>Female</label>
+              <input type="radio" id="other" name="gender" value="Other">
+              <label>Other</label>
+            </div>
           </div>
       
           <div class="input-div">
-            <label>Employment Type:</label><br>
-            <input type="checkbox" id="fullTime" value="Full-Time">
-            <label>Full-Time</label>
-            <input type="checkbox" id="partTime" value="Part-Time">
-            <label>Full-Time</label>
+            <label>Employment Type:</label>
+            <div class="emp-typ">
+              <input type="checkbox" id="fullTime" value="Full-Time">
+              <label>Full-Time</label>
+              <input type="checkbox" id="partTime" value="Part-Time">
+              <label>Full-Time</label>
+            </div>
           </div>
       
           <button class="submit-btn" type="submit">Submit</button>
         </form>
+      </div>
+      <div class="register-img">
+        <img src="/assets/register.png" alt="">
       </div>
     </div>
   </div>
