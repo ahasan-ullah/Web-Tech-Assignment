@@ -68,3 +68,30 @@ nav{
   border: 1px solid white;
   color: white;
 }
+
+.about-us{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgb(214, 199, 199);
+}
+
+.about-section-heading{
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+.about-us-heading{
+  text-align: center;
+  margin-top: 0.5rem;
+  color: rgb(82, 74, 74);
+  letter-spacing: 2px;
+}
+
+.about-us-description{
+  text-align: justify;
+  line-height: 25px;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
