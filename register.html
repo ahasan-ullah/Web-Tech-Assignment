@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <div class="register-section">
+    <div class="register-form">
+      <form>
+        <div class="input-div">
+          <label for="employeeId">Employee ID:</label>
+          <input type="text" id="emp-id" placeholder="Enter Your Id" required>
+        </div>
+        <div class="input-div">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" required>
+        </div>
+
+        <div class="input-div">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        
+        <div class="input-div">
+          <label>Department:</label><br>
+          <select id="department" required>
+            <option value="">Select Department</option>
+            <option value="HR">HR</option>
+            <option value="Sales">Sales</option>
+            <option value="IT">IT</option>
+            <option value="Marketing">Marketing</option>
+          </select>
+        </div>
+        
+        <div class="input-div">
+          <label>Joining Date:</label>
+          <input type="date" id="joiningDate" required>
+        </div>
+    
+        <div class="input-div">
+          <label>Gender:</label><br>
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other">Other</label><br><br>
+        </div>
+    
+        <div class="input-div">
+          <label>Employment Type:</label><br>
+          <input type="checkbox" id="fullTime" value="Full-Time">
+          <label>Full-Time</label>
+          <input type="checkbox" id="partTime" value="Part-Time">
+          <label>Full-Time</label>
+        </div>
+    
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
