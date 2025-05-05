@@ -60,3 +60,51 @@ select {
   color: black;
   border: 1px solid black;
 }
+
+.reset-btn {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+  background-color: red;
+  transition: 0.3s ease all;
+  margin-top: 10px;
+}
+
+.error-msg{
+  color: red;
+}
+
+.reset-btn:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+#result {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#result h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#result ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#result li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}

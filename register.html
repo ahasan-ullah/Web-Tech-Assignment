@@ -27,23 +27,26 @@
     <h3 class="register-heading">Register Now!</h3>
     <div class="register-section">
       <div class="register-form">
-        <form>
+        <form id="registerForm">
           <div class="input-div">
-            <label for="employeeId">Employee ID:</label>
-            <input type="text" id="emp-id" placeholder="Enter your id" required>
+            <label for="emp-id">Employee ID:</label>
+            <input type="text" id="emp-id" placeholder="Enter your ID" required>
+            <div class="error-msg" id="emp-id-error"></div>
           </div>
           <div class="input-div">
             <label for="fullName">Full Name:</label>
-            <input placeholder="Enter your name" type="text" id="fullName" required>
+            <input type="text" id="fullName" placeholder="Enter your name" required>
+            <div class="error-msg" id="fullName-error"></div>
           </div>
   
           <div class="input-div">
             <label for="email">Email:</label>
-            <input placeholder="Enter your email" type="email" id="email" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <div class="error-msg" id="email-error"></div>
           </div>
           
           <div class="input-div">
-            <label>Department:</label>
+            <label for="department">Department:</label>
             <select id="department" required>
               <option value="">Select Department</option>
               <option value="HR">HR</option>
@@ -51,11 +54,13 @@
               <option value="IT">IT</option>
               <option value="Marketing">Marketing</option>
             </select>
+            <div class="error-msg" id="department-error"></div>
           </div>
           
           <div class="input-div">
-            <label>Joining Date:</label>
+            <label for="joiningDate">Joining Date:</label>
             <input type="date" id="joiningDate" required>
+            <div class="error-msg" id="joiningDate-error"></div>
           </div>
       
           <div class="input-div">
@@ -68,6 +73,7 @@
               <input type="radio" id="other" name="gender" value="Other">
               <label>Other</label>
             </div>
+            <div class="error-msg" id="gender-error"></div>
           </div>
       
           <div class="input-div">
@@ -76,17 +82,21 @@
               <input type="checkbox" id="fullTime" value="Full-Time">
               <label>Full-Time</label>
               <input type="checkbox" id="partTime" value="Part-Time">
-              <label>Full-Time</label>
+              <label>Part-Time</label>
             </div>
           </div>
       
           <button class="submit-btn" type="submit">Submit</button>
+          <button class="reset-btn" type="reset">Reset</button> <!-- Reset Button -->
         </form>
       </div>
       <div class="register-img">
         <img src="/assets/register.png" alt="">
       </div>
     </div>
+    <div id="result"></div>
   </div>
+
+  <script src="register.js"></script>
 </body>
 </html>
