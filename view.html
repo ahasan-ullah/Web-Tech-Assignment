@@ -104,5 +104,20 @@
       </tr>
     </table>
   </section>
+  <section id="editFormContainer">
+    <h4>Edit Employee</h4>
+    <form id="editForm">
+      <input type="hidden" id="editRowIndex" />
+      <label>Id: <input type="text" id="editId" required /></label>
+      <label>Name: <input type="text" id="editName" required /></label>
+      <label>Email: <input type="email" id="editEmail" required /></label>
+      <label>Department: <input type="text" id="editDept" required /></label>
+      <label>Joining Date: <input type="date" id="editDate" required /></label>
+      <label>Gender: <input type="text" id="editGender" required /></label>
+      <label>Employee Type: <input type="text" id="editType" required /></label>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+  <script src="view.js"></script>
 </body>
 </html>
